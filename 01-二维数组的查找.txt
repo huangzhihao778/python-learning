@@ -1,0 +1,15 @@
+# -*- coding:utf-8 -*-
+class Solution:
+    # array 二维列表
+    def Find(self, target, array):
+        # write code here
+        i = 0
+        j = len(array[0])-1
+        whlie i <= len(array)-1 and j > 0:
+        	if target == array[i][j]:
+        		return true
+        	elif target > array[i][j]:
+        		i += 1
+        	else:
+        		j -= 1
+        return false
